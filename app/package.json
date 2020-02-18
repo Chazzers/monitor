@@ -16,12 +16,12 @@
     "rollup-plugin-browsersync": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.29.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.31.1",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-bundle-scss": "^0.1.0",
     "rollup-plugin-collect-sass": "^1.0.9",
