@@ -1,4 +1,5 @@
 import "../styles/main.scss";
+import "../styles/partials/_fonts.scss";
 import "../styles/partials/_variables.scss";
 import "../styles/partials/_container.scss";
 import "../styles/partials/_header.scss";

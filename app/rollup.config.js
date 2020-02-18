@@ -36,6 +36,9 @@ export default {
 				}, {
 					src: 'src/data/*',
 					dest: 'dist/data'
+				}, {
+					src: 'src/fonts/*',
+					dest: 'dist/fonts'
 				}
 			]
 		}),
