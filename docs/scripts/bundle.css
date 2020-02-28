@@ -142,18 +142,6 @@ html {
   margin: 0;
   height: 100%; }
 
-div.tooltip {
-  position: absolute;
-  text-align: center;
-  width: 60px;
-  height: 28px;
-  padding: 2px;
-  font: 12px sans-serif;
-  background: lightsteelblue;
-  border: 0px;
-  border-radius: 8px;
-  pointer-events: none; }
-
 .visualisatie-container {
   display: flex;
   flex-direction: column;
@@ -383,6 +371,18 @@ div.tooltip {
   flex-direction: column; }
   .options label {
     padding-bottom: 1em; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none; }
 
 .bold {
   font-family: "robotomedium", sans-serif; }

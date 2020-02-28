@@ -18,6 +18,10 @@ const countUpOptions = {
   useGrouping: false
 };
 
+const counter = document.querySelector('#counter-hoe-vaak-1');
+
+if(counter) {
+
 // Counters
 let counterHoeVaak1 = new CountUp("counter-hoe-vaak-1", 0, countUpOptions);
 let counterHoeVaak2 = new CountUp("counter-hoe-vaak-2", 0, countUpOptions);
@@ -150,3 +154,4 @@ inView(".counter").on("enter", () => {
   }
   scrollPos = document.body.getBoundingClientRect().top;
 });
+}
