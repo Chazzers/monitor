@@ -67,6 +67,11 @@
 		align-items: center;
 		margin-bottom: 0.5em;
 
+		@include mq("desktop") {
+			max-width:150px;
+			align-items:flex-start;
+		}
+
 		.legend-color {
 				width: 24px;
 				height: 24px;
@@ -79,6 +84,7 @@
 
 			@include mq("desktop") {
 				font-size: 16px;
+				flex:1;
 			}
 		}
 	}
@@ -88,8 +94,6 @@
 	@include mq("desktop") {
 		display: flex;
 		align-items: flex-end;
-		margin-bottom: 7em;
-		margin-left: 2em;
 	}
 }
 
