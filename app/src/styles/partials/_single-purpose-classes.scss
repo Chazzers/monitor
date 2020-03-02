@@ -4,5 +4,7 @@
 
 .bolder {
 	font-family: $title-family;
-	font-size: 20px;
+	@include mq("phone-wide"){
+		font-size: 20px;
+	}
 }
