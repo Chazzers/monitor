@@ -87,71 +87,137 @@ inView.offset({
   bottom: 50
 });
 
+// inView(".counter").on("enter", () => {
+//   // scroll up: first elements 1st
+//   if (document.body.getBoundingClientRect().top > scrollPos) {
+  //   if (inView.is(counterHoeVaak1el)) {
+  //     executeCounters(890);
+  //   } else if (inView.is(counterHoeVaak2el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterHoeVaak3el)) {
+  //     executeCounters(143);
+  //   } else if (inView.is(counterWaarom1el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterWaarom2el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterUitkomst1el)) {
+  //     executeCounters(255);
+  //   } else if (inView.is(counterTerecht1el)) {
+  //     executeCounters(323);
+  //   } else if (inView.is(counterTerecht2el)) {
+  //     executeCounters(210);
+  //   } else if (inView.is(counterTevreden1el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterTevreden2el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterTevreden3el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterVertrouwen1el)) {
+  //     executeCounters(1643);
+  //   } else if (inView.is(counterVertrouwen2el)) {
+  //     executeCounters(1643);
+  //   } else if (inView.is(counterVertrouwen3el)) {
+  //     executeCounters(113);
+  //   }
+  // }
+//   //scroll down: last elements 1st
+  // else {
+  //   if (inView.is(counterVertrouwen3el)) {
+  //     executeCounters(113);
+  //   } else if (inView.is(counterVertrouwen2el)) {
+  //     executeCounters(1643);
+  //   } else if (inView.is(counterVertrouwen1el)) {
+  //     executeCounters(1643);
+  //   } else if (inView.is(counterTevreden3el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterTevreden2el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterTevreden1el)) {
+  //     executeCounters(633);
+  //   } else if (inView.is(counterTerecht2el)) {
+  //     executeCounters(210);
+  //   } else if (inView.is(counterTerecht1el)) {
+  //     executeCounters(323);
+  //   } else if (inView.is(counterUitkomst1el)) {
+  //     executeCounters(255);
+  //   } else if (inView.is(counterWaarom2el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterWaarom1el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterHoeVaak3el)) {
+  //     executeCounters(143);
+  //   } else if (inView.is(counterHoeVaak2el)) {
+  //     executeCounters(815);
+  //   } else if (inView.is(counterHoeVaak1el)) {
+  //     executeCounters(890);
+  //   }
+//   }
+//   scrollPos = document.body.getBoundingClientRect().top;
+// });
+// }
+
 inView(".counter").on("enter", () => {
-  // scroll up: first elements 1st
   if (document.body.getBoundingClientRect().top > scrollPos) {
     if (inView.is(counterHoeVaak1el)) {
-      executeCounters(890);
+      counterHoeVaak1.update(890);
     } else if (inView.is(counterHoeVaak2el)) {
-      executeCounters(815);
+      counterHoeVaak2.update(815);
     } else if (inView.is(counterHoeVaak3el)) {
-      executeCounters(143);
+      counterHoeVaak3.update(143);
     } else if (inView.is(counterWaarom1el)) {
-      executeCounters(815);
+      counterWaarom1.update(815);
     } else if (inView.is(counterWaarom2el)) {
-      executeCounters(815);
+      counterWaarom2.update(815);
     } else if (inView.is(counterUitkomst1el)) {
-      executeCounters(255);
+      counterUitkomst1.update(255);
     } else if (inView.is(counterTerecht1el)) {
-      executeCounters(323);
+      counterTerecht1.update(323);
     } else if (inView.is(counterTerecht2el)) {
-      executeCounters(210);
+      counterTerecht2.update(210);
     } else if (inView.is(counterTevreden1el)) {
-      executeCounters(633);
+      counterTevreden1.update(633);
     } else if (inView.is(counterTevreden2el)) {
-      executeCounters(633);
+      counterTevreden2.update(633);
     } else if (inView.is(counterTevreden3el)) {
-      executeCounters(633);
+      counterTevreden3.update(633);
     } else if (inView.is(counterVertrouwen1el)) {
-      executeCounters(1643);
+      counterVertrouwen1.update(1643);
     } else if (inView.is(counterVertrouwen2el)) {
-      executeCounters(1643);
+      counterVertrouwen2.update(1643);
     } else if (inView.is(counterVertrouwen3el)) {
-      executeCounters(113);
+      counterVertrouwen3.update(113);
     }
-  }
-  //scroll down: last elements 1st
-  else {
+  } else {
     if (inView.is(counterVertrouwen3el)) {
-      executeCounters(113);
+      counterVertrouwen3.update(113);
     } else if (inView.is(counterVertrouwen2el)) {
-      executeCounters(1643);
+      counterVertrouwen2.update(1643);
     } else if (inView.is(counterVertrouwen1el)) {
-      executeCounters(1643);
+      counterVertrouwen1.update(1643);
     } else if (inView.is(counterTevreden3el)) {
-      executeCounters(633);
+      counterTevreden3.update(633);
     } else if (inView.is(counterTevreden2el)) {
-      executeCounters(633);
+      counterTevreden2.update(633);
     } else if (inView.is(counterTevreden1el)) {
-      executeCounters(633);
+      counterTevreden1.update(633);
     } else if (inView.is(counterTerecht2el)) {
-      executeCounters(210);
+      counterTerecht2.update(210);
     } else if (inView.is(counterTerecht1el)) {
-      executeCounters(323);
+      counterTerecht1.update(323);
     } else if (inView.is(counterUitkomst1el)) {
-      executeCounters(255);
+      counterUitkomst1.update(255);
     } else if (inView.is(counterWaarom2el)) {
-      executeCounters(815);
+      counterWaarom2.update(815);
     } else if (inView.is(counterWaarom1el)) {
-      executeCounters(815);
+      counterWaarom1.update(815);
     } else if (inView.is(counterHoeVaak3el)) {
-      executeCounters(143);
+      counterHoeVaak3.update(143);
     } else if (inView.is(counterHoeVaak2el)) {
-      executeCounters(815);
+      counterHoeVaak2.update(815);
     } else if (inView.is(counterHoeVaak1el)) {
-      executeCounters(890);
+      counterHoeVaak1.update(890);
     }
   }
   scrollPos = document.body.getBoundingClientRect().top;
-});
+})
 }

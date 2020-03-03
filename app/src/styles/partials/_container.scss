@@ -13,6 +13,17 @@
 		}
 	}
 }
+.first-title {
+	margin: 0.5em 0.5em 0.5em;
+
+	@include mq("tablet") {
+		margin: 1em auto;
+		max-width: 600px;
+	}
+	@include mq("desktop") {
+		max-width: 58.33%;
+	}
+}
 
 .container {
 	margin: 0 1em;
@@ -23,7 +34,7 @@
 	}
 
 	@include mq("desktop") {
-		max-width: 700px;
+		max-width: 58.33%;
 	}
 }
 

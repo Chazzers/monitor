@@ -1,18 +1,36 @@
 @font-face {
-  font-family: 'rubikbold';
+  font-family: 'rubik-bold';
   src: url("../fonts/rubik-bold-webfont.woff2") format("woff2"), url("../fonts/rubik-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotomedium';
+  font-family: 'roboto-medium';
   src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"), url("../fonts/roboto-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'robotolight';
+  font-family: 'roboto-light';
   src: url("../fonts/roboto-light-webfont.woff2") format("woff2"), url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'rubikbold';
+  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff2") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -25,6 +43,16 @@
     margin-top: 2em;
     margin-bottom: 1em; } }
 
+.first-title {
+  margin: 0.5em 0.5em 0.5em; }
+  @media only screen and (min-width: 768px) {
+    .first-title {
+      margin: 1em auto;
+      max-width: 600px; } }
+  @media only screen and (min-width: 1248px) {
+    .first-title {
+      max-width: 58.33%; } }
+
 .container {
   margin: 0 1em; }
   @media only screen and (min-width: 768px) {
@@ -33,7 +61,7 @@
       max-width: 600px; } }
   @media only screen and (min-width: 1248px) {
     .container {
-      max-width: 700px; } }
+      max-width: 58.33%; } }
 
 .view-height {
   position: relative; }
@@ -62,27 +90,22 @@
     height: 100%; }
 
 header {
-  background-color: #000;
-  padding: 1em; }
-  header .flex-parent {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column; }
-    header .flex-parent .flex-child {
-      flex: 1; }
-      header .flex-parent .flex-child:first-of-type {
-        padding-bottom: 1em; }
-      header .flex-parent .flex-child .logo {
-        background: left/contain no-repeat url("../images/logo.svg");
-        width: 100%;
-        height: 5em; }
-    header .flex-parent .titles h1 {
-      color: #fff33d;
-      font-size: 1.5em;
-      text-transform: uppercase; }
-    header .flex-parent .titles h2 {
-      color: #fff;
-      font-size: 1.25em; }
+  background-color: #fff33d; }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    header nav ul li {
+      display: block;
+      text-align: center;
+      font-family: "robotolight", sans-serif; }
+      header nav ul li a {
+        display: block;
+        border-bottom: 1px solid #000;
+        color: #000;
+        padding: 0.7rem;
+        text-decoration: none;
+        cursor: pointer; }
 
 .onderwerp-buttons-container {
   display: flex;
@@ -184,6 +207,9 @@ body,
 html {
   margin: 0;
   height: 100%; }
+
+html {
+  scroll-behavior: smooth; }
 
 div.tooltip {
   position: absolute;
